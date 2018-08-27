@@ -1,0 +1,1 @@
+/Users/jeff/src/facebook-bug-sample/Facebook Crash Example/Pods/Target Support Files/FacebookCore/FacebookCore-umbrella.h

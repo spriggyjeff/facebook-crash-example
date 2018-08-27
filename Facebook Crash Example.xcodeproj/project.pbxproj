@@ -14,6 +14,7 @@
 		1F710D622134626E0026F269 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F710D602134626E0026F269 /* LaunchScreen.storyboard */; };
 		1F710D6D2134626E0026F269 /* Facebook_Crash_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F710D6C2134626E0026F269 /* Facebook_Crash_ExampleTests.swift */; };
 		1F710D782134626E0026F269 /* Facebook_Crash_ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F710D772134626E0026F269 /* Facebook_Crash_ExampleUITests.swift */; };
+		36494C03556C1D79EA9DAD89 /* libPods-main_pods-Facebook Crash Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6CF2B3075200F27B05F304 /* libPods-main_pods-Facebook Crash Example.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,9 @@
 		1F710D732134626E0026F269 /* Facebook Crash ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Facebook Crash ExampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F710D772134626E0026F269 /* Facebook_Crash_ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facebook_Crash_ExampleUITests.swift; sourceTree = "<group>"; };
 		1F710D792134626E0026F269 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99811BB54FBC8D8A5F13DC64 /* Pods-main_pods-Facebook Crash Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-main_pods-Facebook Crash Example.debug.xcconfig"; path = "Target Support Files/Pods-main_pods-Facebook Crash Example/Pods-main_pods-Facebook Crash Example.debug.xcconfig"; sourceTree = "<group>"; };
+		DC6CF2B3075200F27B05F304 /* libPods-main_pods-Facebook Crash Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-main_pods-Facebook Crash Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBFB778119D33677661D5A45 /* Pods-main_pods-Facebook Crash Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-main_pods-Facebook Crash Example.release.xcconfig"; path = "Target Support Files/Pods-main_pods-Facebook Crash Example/Pods-main_pods-Facebook Crash Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36494C03556C1D79EA9DAD89 /* libPods-main_pods-Facebook Crash Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,8 @@
 				1F710D6B2134626E0026F269 /* Facebook Crash ExampleTests */,
 				1F710D762134626E0026F269 /* Facebook Crash ExampleUITests */,
 				1F710D552134626C0026F269 /* Products */,
+				756469F57690FBAD823081C9 /* Pods */,
+				F02B94070466030B39465E22 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +132,24 @@
 			path = "Facebook Crash ExampleUITests";
 			sourceTree = "<group>";
 		};
+		756469F57690FBAD823081C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				99811BB54FBC8D8A5F13DC64 /* Pods-main_pods-Facebook Crash Example.debug.xcconfig */,
+				FBFB778119D33677661D5A45 /* Pods-main_pods-Facebook Crash Example.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F02B94070466030B39465E22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC6CF2B3075200F27B05F304 /* libPods-main_pods-Facebook Crash Example.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +157,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F710D7C2134626E0026F269 /* Build configuration list for PBXNativeTarget "Facebook Crash Example" */;
 			buildPhases = (
+				1E00AB32D302960F3695C4FF /* [CP] Check Pods Manifest.lock */,
 				1F710D502134626C0026F269 /* Sources */,
 				1F710D512134626C0026F269 /* Frameworks */,
 				1F710D522134626C0026F269 /* Resources */,
+				AE0299F5854DEC93F89DBE3D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +277,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E00AB32D302960F3695C4FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-main_pods-Facebook Crash Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE0299F5854DEC93F89DBE3D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-main_pods-Facebook Crash Example/Pods-main_pods-Facebook Crash Example-resources.sh",
+				"${PODS_ROOT}/FBSDKCoreKit/FacebookSDKStrings.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FacebookSDKStrings.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-main_pods-Facebook Crash Example/Pods-main_pods-Facebook Crash Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1F710D502134626C0026F269 /* Sources */ = {
@@ -428,6 +502,7 @@
 		};
 		1F710D7D2134626E0026F269 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99811BB54FBC8D8A5F13DC64 /* Pods-main_pods-Facebook Crash Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -446,6 +521,7 @@
 		};
 		1F710D7E2134626E0026F269 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBFB778119D33677661D5A45 /* Pods-main_pods-Facebook Crash Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,6 @@
+module Pods_main_pods_Facebook_Crash_Example {
+  umbrella header "Pods-main_pods-Facebook Crash Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
